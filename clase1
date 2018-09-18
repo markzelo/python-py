@@ -6,15 +6,18 @@
 import pygame,sys
 from pygame.locals import *
 
-Color=(0,140,60)
-Colordos=pygame.Color(235,120,9)
+
+#Colordos=pygame.Color(235,120,9)
 
 pygame.init()
 ventana=pygame.display.set_mode((400,350))
 pygame.display.set_caption("hola a todos")
+Color=(0,140,60)
+pygame.draw.line(ventana,Color,(60,80),(160,108),8)
+
 
 while True:
-    ventana.fill(Colordos)
+    #ventana.fill(Colordos)
     for evento in pygame.event.get():
         if evento.type==QUIT:
             pygame.quiet()
